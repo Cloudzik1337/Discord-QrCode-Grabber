@@ -1,7 +1,7 @@
 # Discord-QrCode-Grabber
 <pre>
 Discord Qr Code Grabber
-Put your weebhook and uplod file to your victims
+Put your weebhook and upload file to your victims
 Note: Only for educational purpouses | Everything was done in scratch rewritten to python :) 
 Example | github.com/cloudzik1337
 </pre>
