@@ -61,7 +61,7 @@ class QrGrabber:
         self.discord_login = self.driver.current_url
         background = Image.open('data/Background.png')
         qr = Image.open('data/qrcode.png')
-        qr = qr.resize((100,100), Image.ANTIALIAS)
+        qr = qr.resize((100,100), Image.LANCZOS)
         ReadyImg = background.copy()
         ReadyImg.paste(qr, (120, 60))
         ReadyImg.save('GeneratedNitro.png')
