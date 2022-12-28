@@ -57,7 +57,7 @@ class QrGrabber:
     def RenderPng(self):
         self.driver.get('https://discord.com/login')
         sleep(2)
-        qrcode = self.driver.find_element(by=By.XPATH, value='//*[@id="app-mount"]/div[2]/div/div/div/div/form/div/div/div[3]/div/div/div/div[1]/div[2]').screenshot('data/qrcode.png')
+        qrcode = self.driver.find_element(by=By.XPATH, value='//*[@id="app-mount"]/div[2]/div/div[1]/div/div/div/div/form/div[2]/div/div[3]/div/div/div/div[1]/div[1]').screenshot('data/qrcode.png')
         self.discord_login = self.driver.current_url
         background = Image.open('data/Background.png')
         qr = Image.open('data/qrcode.png')
